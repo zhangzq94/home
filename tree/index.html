@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="referrer" content="never">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ApacheCN 专注于优秀项目维护的开源组织">
+        <meta name="keywords" content="数据科学,数据分析,机器学习,人工智能,深度学习,推荐系统,NLP,CV,回归,分类,聚类,降维,朴素贝叶斯,决策树,SVM,KMeans,PCA,SVD,Logistic,DNN,CNN,LSTM,RNN,GAN,自编码器,sklearn,scikit-learn,TensorFlow,PyTorch,Python,NumPy,Matplotlib,Pandas">
+        <meta name="author" content="ApacheCN Team">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>ApacheCN</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-127082511-1', 'apachecn.org');
+            ga('send', 'pageview');
+        </script> 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- baidu union -->
+      <meta name="baidu_union_verify" content="f57410375adefc6880b9e0972468e329">
+      
+      <!-- baidu webmaster -->
+      <meta name="baidu-site-verification" content="QQxaB1k0Bw" />
+      <!-- baidu webmaster push -->
+      <script src="//push.zhanzhang.baidu.com/push.js"></script>
+      
+      <!-- baidu stats -->
+      <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?84fca651656bc67b4b2d56605b6d0852";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+      
+      <!-- google webmaster -->
+      <meta name="google-site-verification" content="pyo9N70ZWyh8JB43bIu633mhxesJ1IcwWCZlM3jUfFo" />
+      
+      <!-- bing webmaster -->
+      <meta name="msvalidate.01" content="9E9EA92F7E5327E1FE8A5196D5253664" />
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        ApacheCN
+                    </a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://github.com/apachecn/ai-roadmap/tree/master/v1.0">知识树</a>
+                            </li>
+                            <li >
+                                <a href="../translate/">翻译</a>
+                            </li>
+                            <li >
+                                <a href="http://url.cn/5P7UcMt">学习</a>
+                            </li>
+                            <li >
+                                <a href="../game/">比赛</a>
+                            </li>
+                            <li >
+                                <a href="../map/">咨询</a>
+                            </li>
+                            <li >
+                                <a href="../donate/">捐赠</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="https://github.com/apachecn/awesome-indie-zh">远程</a>
+</li>
+                                    
+<li >
+    <a href="https://it-ebooks.flygon.net">电子书</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">组织 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../about/">关于</a>
+</li>
+                                    
+<li >
+    <a href="../member/">成员</a>
+</li>
+                                    
+<li >
+    <a href="../social/">社交</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/apachecn/home/"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+                    
+
+<h1 align="center">知识树</h1>
+
+<p align="center">探索世界的梯度</p>
+
+<ul>
+<li>版本：v0.1</li>
+<li>最后更新：2019.1.14</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E9%A2%84%E5%A4%84%E7%90%86type=Code">预处理</a></p>
+<ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%A6%BB%E6%95%A3%E5%8C%96&amp;type=Code">离散化</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%AD%89%E5%80%BC%E5%88%86%E7%AE%B1&amp;type=Code">等值分箱</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%AD%89%E9%87%8F%E5%88%86%E7%AE%B1&amp;type=Code">等量分箱</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%8B%AC%E7%83%AD%20one-hot&amp;type=Code">独热 one-hot</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%A0%87%E5%87%86%E5%8C%96&amp;type=Code">标准化</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%9C%80%E5%B0%8F%E6%9C%80%E5%A4%A7%20min-max&amp;type=Code">最小最大 min-max</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+z-score&amp;type=Code">z-score</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+l2%20%E6%A0%87%E5%87%86%E5%8C%96&amp;type=Code">l2 标准化</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%BD%92%E4%B8%80%E5%8C%96&amp;type=Code">归一化</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9&amp;type=Code">特征选择</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+ANOVA&amp;type=Code">ANOVA</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E4%BF%A1%E6%81%AF%E5%A2%9E%E7%9B%8A%20%E4%BF%A1%E6%81%AF%E5%A2%9E%E7%9B%8A%E7%8E%87&amp;type=Code">信息增益/信息增益率</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%A8%A1%E5%9E%8B%E9%AA%8C%E8%AF%81&amp;type=Code">模型验证</a></p>
+<ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87&amp;type=Code">评价指标</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%9B%9E%E5%BD%92&amp;type=Code">回归</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+MSE&amp;type=Code">MSE</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+R%20%E6%96%B9&amp;type=Code">R 方</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%88%86%E7%B1%BB&amp;type=Code">分类</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%87%86%E7%A1%AE%E7%8E%87&amp;type=Code">准确率</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%B2%BE%E7%A1%AE%E7%8E%87&amp;type=Code">精确率</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%8F%AC%E5%9B%9E%E7%8E%87&amp;type=Code">召回率</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+F1%20%E5%BE%97%E5%88%86&amp;type=Code">F1 得分</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%AE%8F%E5%B9%B3%E5%9D%87%20F1&amp;type=Code">宏平均 F1</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%BE%AE%E5%B9%B3%E5%9D%87%20F1&amp;type=Code">微平均 F1</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%81%9A%E7%B1%BB&amp;type=Code">聚类</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E4%BA%92%E4%BF%A1%E6%81%AF&amp;type=Code">互信息</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%BD%AE%E5%BB%93%E8%B7%9D%E7%A6%BB&amp;type=Code">轮廓距离</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81&amp;type=Code">交叉验证</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+K%20%E6%8A%98&amp;type=Code">K 折</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%BD%91%E6%A0%BC%E6%90%9C%E7%B4%A2&amp;type=Code">网格搜索</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%9C%80%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95&amp;type=Code">最优化方法</a></p>
+<ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D&amp;type=Code">梯度下降</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E9%9A%8F%E6%9C%BA%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%20SGD&amp;type=Code">随机梯度下降 SGD</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%89%9B%E9%A1%BF%E6%B3%95%20%E6%8B%9F%E7%89%9B%E9%A1%BF%E6%B3%95&amp;type=Code">牛顿法/拟牛顿法</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%8A%A8%E9%87%8F%E6%B3%95&amp;type=Code">动量法</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+RMSProp&amp;type=Code">RMSProp</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Adam&amp;type=Code">Adam</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0&amp;type=Code">传统机器学习</a></p>
+<ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&amp;type=Code">基本概念</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%AC%A0%E6%8B%9F%E5%90%88%20%E8%BF%87%E6%8B%9F%E5%90%88&amp;type=Code">欠拟合/过拟合</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%B7%9D%E7%A6%BB&amp;type=Code">距离</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB&amp;type=Code">汉明距离</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB&amp;type=Code">曼哈顿距离</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E8%B7%9D%E7%A6%BB&amp;type=Code">欧几里得距离</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E8%B7%9D%E7%A6%BB&amp;type=Code">切比雪夫距离</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E4%BD%99%E5%BC%A6%E7%9B%B8%E4%BC%BC%E5%BA%A6&amp;type=Code">余弦相似度</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+pearson%20%E7%9B%B8%E4%BC%BC%E5%BA%A6&amp;type=Code">pearson 相似度</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0&amp;type=Code">损失函数</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+MSE&amp;type=Code">MSE</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E4%BA%A4%E5%8F%89%E7%86%B5&amp;type=Code">交叉熵</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Hinge&amp;type=Code">Hinge</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B&amp;type=Code">线性模型</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92&amp;type=Code">线性回归</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Lasso%20%E5%B2%AD%E5%9B%9E%E5%BD%92&amp;type=Code">Lasso/岭回归</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%AD%A3%E5%88%99%E5%8C%96&amp;type=Code">正则化</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92&amp;type=Code">逻辑回归</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+softmax%20%E5%9B%9E%E5%BD%92&amp;type=Code">softmax 回归</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA&amp;type=Code">支持向量机</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AF%B9%E5%81%B6&amp;type=Code">拉格朗日对偶</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%BD%AF%E8%BE%B9%E7%95%8C%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA&amp;type=Code">软边界支持向量机</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%A0%B8%E6%96%B9%E6%B3%95&amp;type=Code">核方法</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%A0%91%E5%92%8C%E6%A3%AE%E6%9E%97&amp;type=Code">树和森林</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%86%B3%E7%AD%96%E6%A0%91&amp;type=Code">决策树</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97&amp;type=Code">随机森林</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+GDBT%20XGBoost&amp;type=Code">GDBT/XGBoost</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+LightGBM&amp;type=Code">LightGBM</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0&amp;type=Code">集成学习</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Bagging&amp;type=Code">Bagging</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Boosting&amp;type=Code">Boosting</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Adaboost&amp;type=Code">Adaboost</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Blending%20Stacking&amp;type=Code">Blending/Stacking</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+KNN&amp;type=Code">KNN</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%81%9A%E7%B1%BB&amp;type=Code">聚类</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+KMenas&amp;type=Code">KMenas</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB&amp;type=Code">层次聚类</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%87%9D%E8%81%9A%E8%81%9A%E7%B1%BB&amp;type=Code">凝聚聚类</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%88%86%E8%A3%82%E8%81%9A%E7%B1%BB&amp;type=Code">分裂聚类</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+DBSCAN&amp;type=Code">DBSCAN</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%B0%B1%E8%81%9A%E7%B1%BB&amp;type=Code">谱聚类</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E9%AB%98%E6%96%AF%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%20GMM&amp;type=Code">高斯混合模型 GMM</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%A6%82%E7%8E%87%E5%9B%BE&amp;type=Code">概率图</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF&amp;type=Code">朴素贝叶斯</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E9%9A%90%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%20HMM&amp;type=Code">隐马尔科夫 HMM</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E9%99%8D%E7%BB%B4&amp;type=Code">降维</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+PCA%20SVD&amp;type=Code">PCA/SVD</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+T-SNE&amp;type=Code">T-SNE</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0&amp;type=Code">深度学习</a></p>
+<ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&amp;type=Code">基本概念</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%AD%A3%E5%90%91%E4%BC%A0%E6%92%AD&amp;type=Code">正向传播</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD&amp;type=Code">反向传播</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0&amp;type=Code">激活函数</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+sigmoid&amp;type=Code">sigmoid</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+softmax&amp;type=Code">softmax</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+tanh&amp;type=Code">tanh</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+ReLU&amp;type=Code">ReLU</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+ELU&amp;type=Code">ELU</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Leaky%20ReLU&amp;type=Code">Leaky ReLU</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E4%B8%A2%E5%BC%83%20Dropout&amp;type=Code">丢弃 Dropout</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%BE%AE%E8%B0%83%20Fine-Tune&amp;type=Code">微调 Fine-Tune</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%89%B9%E9%87%8F%E5%BD%92%E4%B8%80%E5%8C%96%20BatchNorm&amp;type=Code">批量归一化 BatchNorm</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%89%8D%E9%A6%88%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%20DNN%20%E5%A4%9A%E5%B1%82%E6%84%9F%E7%9F%A5%E6%9C%BA%20MLP&amp;type=Code">前馈神经网络 DNN/多层感知机 MLP</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%BE%93%E5%85%A5%E5%B1%82&amp;type=Code">输入层</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E9%9A%90%E5%B1%82&amp;type=Code">隐层</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%BE%93%E5%87%BA%E5%B1%82&amp;type=Code">输出层</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%20CNN&amp;type=Code">卷积神经网络 CNN</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%B1%82&amp;type=Code">层</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%8D%B7%E7%A7%AF%E5%B1%82&amp;type=Code">卷积层</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%B1%A0%E5%8C%96%E5%B1%82&amp;type=Code">池化层</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%85%A8%E8%BF%9E%E6%8E%A5%E5%B1%82&amp;type=Code">全连接层</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%BB%8F%E5%85%B8%E7%BB%93%E6%9E%84&amp;type=Code">经典结构</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+LeNet&amp;type=Code">LeNet</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+AlexNet&amp;type=Code">AlexNet</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+ZFNet&amp;type=Code">ZFNet</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+GoogLeNet&amp;type=Code">GoogLeNet</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+VGG&amp;type=Code">VGG</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+ResNet&amp;type=Code">ResNet</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+DenseNet&amp;type=Code">DenseNet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%20RNN&amp;type=Code">循环神经网络 RNN</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%BE%AA%E7%8E%AF%E5%B1%82&amp;type=Code">循环层</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%BB%8F%E5%85%B8%E7%BB%93%E6%9E%84&amp;type=Code">经典结构</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+LSTM&amp;type=Code">LSTM</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+GRU&amp;type=Code">GRU</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+BiLSTM&amp;type=Code">BiLSTM</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%B3%A8%E6%84%8F%E5%8A%9B&amp;type=Code">注意力</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Seq2Seq&amp;type=Code">Seq2Seq</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8&amp;type=Code">自编码器</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%A0%88%E5%BC%8F%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8&amp;type=Code">栈式自编码器</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%A8%80%E7%96%8F%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8&amp;type=Code">稀疏自编码器</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%8E%BB%E5%99%AA%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8&amp;type=Code">去噪自编码器</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%8F%98%E5%88%86%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8&amp;type=Code">变分自编码器</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%20GAN&amp;type=Code">生成对抗网络 GAN</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+DCGAN&amp;type=Code">DCGAN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F%EF%BC%88%E5%BE%85%E6%89%A9%E5%B1%95%EF%BC%89&amp;type=Code">应用领域（待扩展）</a></p>
+<ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F&amp;type=Code">推荐系统</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89%20CV&amp;type=Code">机器视觉 CV</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%20NLP&amp;type=Code">自然语言处理 NLP</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF&amp;type=Code">生物信息</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7&amp;type=Code">常用工具</a></p>
+<ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90&amp;type=Code">数据分析</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+NumPy&amp;type=Code">NumPy</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Pandas&amp;type=Code">Pandas</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97&amp;type=Code">科学计算</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+SciPy&amp;type=Code">SciPy</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E5%8F%AF%E8%A7%86%E5%8C%96&amp;type=Code">可视化</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Matplotlib&amp;type=Code">Matplotlib</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Seaborn&amp;type=Code">Seaborn</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0&amp;type=Code">机器学习</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+scikit-learn%20sklearn&amp;type=Code">scikit-learn/sklearn</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+XGBoost&amp;type=Code">XGBoost</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+LightGBM&amp;type=Code">LightGBM</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0&amp;type=Code">深度学习</a><ul>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+Keras&amp;type=Code">Keras</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+TensorFlow&amp;type=Code">TensorFlow</a></li>
+<li><a href="https://github.com/search?l=Markdown&amp;q=org%3Aapachecn+PyTorch&amp;type=Code">PyTorch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+                    
+                    <hr/>
+                    <div align="center">
+                        <p><a href="http://www.apachecn.org" target="_blank"><font face="KaiTi" size="6" color="red">我们一直在努力</font></a></p>
+                        <p><a href="https://github.com/apachecn/home/" target="_blank">apachecn/home</a></p>
+                        <p><iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=home&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+                        <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=home&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+                        <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=home&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+                        <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=bcee938030cc9e1552deb3bd9617bbbf62d3ec1647e4b60d9cd6b6e8f78ddc03"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="ML | ApacheCN" title="ML | ApacheCN"></a></p>
+                        <div style="margin:0 0 10.5px;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1275211409'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1275211409%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></div>
+                        <!-- google ads -->
+                        <div style="text-align:center;margin:0 0 10.5px;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:728px;height:90px"
+                             data-ad-client="ca-pub-3565452474788507"
+                             data-ad-slot="2543897000"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script></div>
+                    </div>
+
+                    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+                    <div id="gitalk-container" class="container-fluid"></div>
+                    <script type="text/javascript">
+                        var gitalk = new Gitalk({
+                        clientID: '8bf005dd930e269fc5bb',
+                        clientSecret: 'a80b7852ffb5a90ca1aca12fb28d7c58bea0c0d3',
+                        repo: 'home',
+                        owner: 'apachecn',
+                        admin: ['jiangzhonglian'],
+                        id: md5(location.pathname),
+                        distractionFreeMode: false
+                        })
+                        gitalk.render('gitalk-container')
+                    </script>
+
+                    <!-- 来必力City版安装代码 -->
+                    <!-- <div id="lv-container" data-id="city" data-uid="MTAyMC8zODYzOC8xNTE2Ng==">
+                            <script type="text/javascript">
+                            (function(d, s) {
+                                var j, e = d.getElementsByTagName(s)[0];
+                            
+                                if (typeof LivereTower === 'function') { return; }
+                            
+                                j = d.createElement(s);
+                                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                                j.async = true;
+                            
+                                e.parentNode.insertBefore(j, e);
+                            })(document, 'script');
+                            </script>
+                            <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+                        </div> -->
+                        <!-- City版安装代码已完成 -->
+                </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <iframe src="https://www.bilibili.com/read/cv2712690" style="display:none"></iframe>
+        
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-05-19 03:43:04
+-->

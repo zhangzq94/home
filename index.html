@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="referrer" content="never">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ApacheCN 专注于优秀项目维护的开源组织">
+        <meta name="keywords" content="数据科学,数据分析,机器学习,人工智能,深度学习,推荐系统,NLP,CV,回归,分类,聚类,降维,朴素贝叶斯,决策树,SVM,KMeans,PCA,SVD,Logistic,DNN,CNN,LSTM,RNN,GAN,自编码器,sklearn,scikit-learn,TensorFlow,PyTorch,Python,NumPy,Matplotlib,Pandas">
+        <meta name="author" content="ApacheCN Team">
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>ApacheCN</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-127082511-1', 'apachecn.org');
+            ga('send', 'pageview');
+        </script> 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- baidu union -->
+      <meta name="baidu_union_verify" content="f57410375adefc6880b9e0972468e329">
+      
+      <!-- baidu webmaster -->
+      <meta name="baidu-site-verification" content="QQxaB1k0Bw" />
+      <!-- baidu webmaster push -->
+      <script src="//push.zhanzhang.baidu.com/push.js"></script>
+      
+      <!-- baidu stats -->
+      <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?84fca651656bc67b4b2d56605b6d0852";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+      
+      <!-- google webmaster -->
+      <meta name="google-site-verification" content="pyo9N70ZWyh8JB43bIu633mhxesJ1IcwWCZlM3jUfFo" />
+      
+      <!-- bing webmaster -->
+      <meta name="msvalidate.01" content="9E9EA92F7E5327E1FE8A5196D5253664" />
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        ApacheCN
+                    </a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://github.com/apachecn/ai-roadmap/tree/master/v1.0">知识树</a>
+                            </li>
+                            <li >
+                                <a href="translate/">翻译</a>
+                            </li>
+                            <li >
+                                <a href="http://url.cn/5P7UcMt">学习</a>
+                            </li>
+                            <li >
+                                <a href="game/">比赛</a>
+                            </li>
+                            <li >
+                                <a href="map/">咨询</a>
+                            </li>
+                            <li >
+                                <a href="donate/">捐赠</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="https://github.com/apachecn/awesome-indie-zh">远程</a>
+</li>
+                                    
+<li >
+    <a href="https://it-ebooks.flygon.net">电子书</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">组织 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="about/">关于</a>
+</li>
+                                    
+<li >
+    <a href="member/">成员</a>
+</li>
+                                    
+<li >
+    <a href="social/">社交</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/apachecn/home/"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">公告</a></li>
+        <li class="main "><a href="#_2">组织介绍</a></li>
+        <li class="main "><a href="#_3">学习资源</a></li>
+        <li class="main "><a href="#_4">组织架构</a></li>
+        <li class="main "><a href="#_5">组织活动</a></li>
+            <li><a href="#_6">翻译活动征集</a></li>
+            <li><a href="#_7">比赛活动</a></li>
+            <li><a href="#_8">学习活动</a></li>
+            <li><a href="#_9">公益捐赠</a></li>
+            <li><a href="#_10">学习咨询和定制</a></li>
+            <li><a href="#_11">社交活动</a></li>
+        <li class="main "><a href="#_12">交流方式</a></li>
+        <li class="main "><a href="#_13">协议</a></li>
+        <li class="main "><a href="#_14">捐赠列表</a></li>
+        <li class="main "><a href="#_15">友情链接</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+                    
+
+<h1 align="center">ApacheCN 中文开源组织</h1>
+
+<p align="center">可能是东半球最大的 AI 社区</p>
+
+<hr />
+<h2 id="_1"><strong>公告</strong></h2>
+<ol>
+<li>我们组织了一个开源互助平台，方便开源组织和大 V 互相认识，互相帮助，整合资源。请回复<a href="http://bbs.apachecn.org/thread-82.htm">这个帖子</a>并注明组织/个人信息来申请加入。</li>
+<li>如果大家遇到了做得不错的教程或翻译项目，请回复<a href="http://bbs.apachecn.org/thread-83.htm">这个帖子</a>推荐给我们。我们会联系项目的维护者，一起把它变得更好。</li>
+<li>我们的<a href="http://home.apachecn.org/img/about/apachecn_qr.jpg">公众号</a>接受大家的投稿。将文章链接通过消息发给公众号，我们会和你联系。</li>
+<li>请大家回复<a href="http://bbs.apachecn.org/thread-77.htm">这个帖子</a>来推荐希望翻译的内容。</li>
+<li>我们近期有制作 Kaggle 教学视频的计划，如果你有兴趣参与，请联系片刻（QQ 529815144）。CS224n 2019 版笔记等到中文字幕翻译完毕后再整理。</li>
+<li>为了能够将开源事业做大做强，<a href="https://www.zhihu.com/question/318287335">ApacheCN 需要与公益基金会（IT、教育类）合作</a>，欢迎大家提供帮助。</li>
+<li>开源不是一个人的事情，我们的各个模块（请见<a href="http://home.apachecn.org/#_4">组织架构</a>）都需要人手来维护。如果你有兴趣参与，请联系片刻（QQ 529815144）。权限分配灵活，能者居之。</li>
+</ol>
+<h2 id="_2"><strong>组织介绍</strong></h2>
+<blockquote>
+<p>我们是一个大型开源社区，旗下 QQ 群共 9000 余人，订阅用户至少一万人。Github Star 数量超过 20k 个，在所有 Github 组织中<a href="https://gitstar-ranking.com/apachecn">排名前 200</a>。网站日 uip 超过 4k，<a href="https://www.alexa.com/siteinfo/apachecn.org">Alexa 排名的峰值为 20k</a>。我们的核心成员拥有<a href="https://blog.csdn.net/wizardforcel"> CSDN 博客专家</a>和<a href="https://www.jianshu.com/u/b508a6aa98eb">简书程序员优秀作者</a>认证。我们与 <a href="http://home.apachecn.org/img/about/datawhale_qr.jpg">Datawhale</a>、<a href="http://home.apachecn.org/img/about/redstone_qr.jpg">AI 有道</a>、<a href="http://home.apachecn.org/img/about/huanghaiguang_qr.jpg">黄海广博士</a>等国内知名开源组织和大 V 合作，组织公益性的翻译活动、学习活动和比赛组队活动。</p>
+<p>与商业组织不同，我们并不会追逐热点，或者唯利是图。作为公益组织，我们将完成项目放在首要位置，并有足够时间把项目打磨到极致。我们希望做出广大 AI 爱好者真正需要的东西，打造真正有价值的长尾作品。</p>
+</blockquote>
+<ul>
+<li>【导航】<a href="http://www.ibooker.org.cn/">ibooker.org.cn</a></li>
+<li>【归档】<a href="http://home.apachecn.org">home.apachecn.org</a></li>
+<li>【社区】<a href="http://bbs.apachecn.org/">bbs.apachecn.org</a></li>
+<li>【Github】<a href="https://github.com/apachecn">@ApacheCN</a></li>
+<li>自媒体平台<ul>
+<li><a href="https://weibo.com/u/6326715527">微博：@ApacheCN</a></li>
+<li><a href="https://zhuanlan.zhihu.com/apachecn-mlia">知乎专栏：AILearning</a></li>
+<li><a href="http://home.apachecn.org/img/about/apachecn_qr.jpg">公众号：ApacheCN</a></li>
+<li><a href="https://blog.csdn.net/wizardforcel/article/category/8437073">CSDN</a> | <a href="https://www.cnblogs.com/wizardforcel/category/1352397.html">博客园</a> | <a href="https://www.jianshu.com/c/4ee721d0c474">简书</a> | <a href="http://space.bilibili.com/97678687">bilibili</a></li>
+</ul>
+</li>
+<li><strong>We are ApacheCN Open Source Organization, not ASF! We are fans of AI, and have no relationship with ASF!</strong></li>
+<li>合作 or 侵权，请联系 <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#112;&#97;&#99;&#104;&#101;&#99;&#110;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;">&#97;&#112;&#97;&#99;&#104;&#101;&#99;&#110;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;</a> | 请抄送一份到 <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#119;&#105;&#122;&#97;&#114;&#100;&#46;&#122;&#64;&#102;&#111;&#120;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#119;&#105;&#122;&#97;&#114;&#100;&#46;&#122;&#64;&#102;&#111;&#120;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+</ul>
+<h2 id="_3"><strong>学习资源</strong></h2>
+<ul>
+<li><a href="http://home.apachecn.org/translate">编程语言</a></li>
+<li><a href="http://home.apachecn.org/translate">后端/大数据</a></li>
+<li><a href="http://home.apachecn.org/translate">区块链</a></li>
+<li><a href="http://home.apachecn.org/translate">Python 数据科学</a></li>
+<li><a href="http://home.apachecn.org/translate">CS 教程</a></li>
+<li><a href="http://home.apachecn.org/translate">AI 教程</a></li>
+<li><a href="http://home.apachecn.org/translate">AI 文档</a></li>
+<li><a href="http://home.apachecn.org/translate">AI 比赛</a></li>
+</ul>
+<h2 id="_4"><strong>组织架构</strong></h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>负责人</th>
+<th>相关描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>学习活动</td>
+<td>Datawhale</td>
+<td></td>
+</tr>
+<tr>
+<td>翻译活动</td>
+<td>飞龙、袁逸凡</td>
+<td></td>
+</tr>
+<tr>
+<td>AI 比赛</td>
+<td>片刻、飞龙</td>
+<td></td>
+</tr>
+<tr>
+<td>LeetCode</td>
+<td>Lisanaaa、达尔</td>
+<td></td>
+</tr>
+<tr>
+<td>社群运营</td>
+<td>片刻、荼蘼</td>
+<td></td>
+</tr>
+<tr>
+<td>媒体运营</td>
+<td>飞龙、咸鱼、小瑶</td>
+<td></td>
+</tr>
+<tr>
+<td>对外合作</td>
+<td>咸鱼、飞龙、田丰</td>
+<td></td>
+</tr>
+<tr>
+<td>网站开发</td>
+<td>算子、兔兔（等）</td>
+<td></td>
+</tr>
+<tr>
+<td>求职咨询</td>
+<td>片刻</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5"><strong>组织活动</strong></h2>
+<h3 id="_6">翻译活动征集</h3>
+<p><a href="http://bbs.apachecn.org/thread-77.htm">请回复这个帖子</a></p>
+<h3 id="_7">比赛活动</h3>
+<p><a href="http://home.apachecn.org/game/">【点击参与】ApacheCN × FlyAI 人工智能比赛活动</a></p>
+<h3 id="_8">学习活动</h3>
+<p><a href="http://url.cn/5P7UcMt">【点击参与】DataWhale 新学期组队学习计划</a></p>
+<h3 id="_9">公益捐赠</h3>
+<ul>
+<li><a href="http://home.apachecn.org/donate">【点击参与】公益捐赠</a></li>
+<li><a href="http://home.apachecn.org/donate/1-book">【点击参与】图书捐赠</a></li>
+</ul>
+<h3 id="_10">学习咨询和定制</h3>
+<ul>
+<li><strong>接受各种环材化生转行咨询, 让你的青春不迷茫</strong></li>
+<li><a href="http://home.apachecn.org/map">【点击参与】学习咨询和定制</a></li>
+</ul>
+<h3 id="_11">社交活动</h3>
+<p><a href="http://home.apachecn.org/social">【点击参与】社交活动</a></p>
+<h2 id="_12"><strong>交流方式</strong></h2>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>群名称</th>
+<th>群号</th>
+<th>群人数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018-11-21</td>
+<td>量化分析</td>
+<td><a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5zZh6MK" target="_blank" rel="noopener">91380460</a></td>
+<td>500</td>
+</tr>
+<tr>
+<td>2018-06-26</td>
+<td>LeetCode 刷题</td>
+<td><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=fb51367d7878250980024da7f1bdca8d4dab15e6c9864dba29aff27a407f4436" target="_blank" rel="noopener">812791932</a></td>
+<td>1000</td>
+</tr>
+<tr>
+<td>2018-05-02</td>
+<td>大数据-2</td>
+<td><a href="//shang.qq.com/wpa/qunwpa?idkey=5d65b0774e5750e97e5725a201ccf158c84056ab77630223f854f57fa2fb544a" target="_blank" rel="noopener">152622464</a></td>
+<td>2000</td>
+</tr>
+<tr>
+<td>2018-02-07</td>
+<td>724187166</td>
+<td><a href="//shang.qq.com/wpa/qunwpa?idkey=95a5e53232d6e1629cb6ea7132d0cb4c725bd27cb35ebc3f06b1b992279f46a2" target="_blank" rel="noopener">724187166</a></td>
+<td>2000</td>
+</tr>
+<tr>
+<td>2017-09-01</td>
+<td>机器学习</td>
+<td><a href="//shang.qq.com/wpa/qunwpa?idkey=bcee938030cc9e1552deb3bd9617bbbf62d3ec1647e4b60d9cd6b6e8f78ddc03" target="_blank" rel="noopener">629470233</a></td>
+<td>5000</td>
+</tr>
+<tr>
+<td>2014-04-12</td>
+<td>大数据-1(满)</td>
+<td><a href="//shang.qq.com/wpa/qunwpa?idkey=952c3066344564ac53131f7e101948b0b5e5814390fa24bbfa69e76ff915beb7" target="_blank" rel="noopener">214293307</a></td>
+<td>2000</td>
+</tr>
+</tbody>
+</table>
+<p>组织口号: <strong><span style="color: #ff0000;">不装逼的朋友，我们都不想认识 。。。</span></strong></p>
+<h2 id="_13"><strong>协议</strong></h2>
+<p>以各项目协议为准。</p>
+<p>ApacheCN 账号下没有协议的项目，一律视为 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>。</p>
+<h2 id="_14"><strong>捐赠列表</strong></h2>
+<ul>
+<li>捐赠名单: <a href="http://home.apachecn.org/donate/">http://home.apachecn.org/donate/</a></li>
+<li>捐赠格式: <a href="https://github.com/apachecn/home/issues/1">https://github.com/apachecn/home/issues/1</a></li>
+<li>参考添加捐赠方式: <a href="https://github.com/apachecn/home/issues/1">https://github.com/apachecn/home/issues/1</a></li>
+</ul>
+<p><img src="http://data.apachecn.org/img/about/donate.jpg" alt="微信&支付宝" /></p>
+<h2 id="_15"><strong>友情链接</strong></h2>
+<ul>
+<li><a href="https://flygon.net">龙哥盟</a></li>
+<li><a href="http://home.apachecn.org/img/about/datawhale_qr.jpg">Datawhale</a></li>
+<li><a href="https://iphysresearch.github.io/DataSciComp/">Data Science Challenge / Competition</a></li>
+<li><a href="http://www.liuzhaopo.top">lzhpo</a></li>
+<li><a href="https://strivebo.com">Jaybo</a></li>
+</ul>
+                    
+                    <hr/>
+                    <div align="center">
+                        <p><a href="http://www.apachecn.org" target="_blank"><font face="KaiTi" size="6" color="red">我们一直在努力</font></a></p>
+                        <p><a href="https://github.com/apachecn/home/" target="_blank">apachecn/home</a></p>
+                        <p><iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=home&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+                        <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=home&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+                        <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=home&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+                        <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=bcee938030cc9e1552deb3bd9617bbbf62d3ec1647e4b60d9cd6b6e8f78ddc03"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="ML | ApacheCN" title="ML | ApacheCN"></a></p>
+                        <div style="margin:0 0 10.5px;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1275211409'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1275211409%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></div>
+                        <!-- google ads -->
+                        <div style="text-align:center;margin:0 0 10.5px;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:728px;height:90px"
+                             data-ad-client="ca-pub-3565452474788507"
+                             data-ad-slot="2543897000"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script></div>
+                    </div>
+
+                    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+                    <div id="gitalk-container" class="container-fluid"></div>
+                    <script type="text/javascript">
+                        var gitalk = new Gitalk({
+                        clientID: '8bf005dd930e269fc5bb',
+                        clientSecret: 'a80b7852ffb5a90ca1aca12fb28d7c58bea0c0d3',
+                        repo: 'home',
+                        owner: 'apachecn',
+                        admin: ['jiangzhonglian'],
+                        id: md5(location.pathname),
+                        distractionFreeMode: false
+                        })
+                        gitalk.render('gitalk-container')
+                    </script>
+
+                    <!-- 来必力City版安装代码 -->
+                    <!-- <div id="lv-container" data-id="city" data-uid="MTAyMC8zODYzOC8xNTE2Ng==">
+                            <script type="text/javascript">
+                            (function(d, s) {
+                                var j, e = d.getElementsByTagName(s)[0];
+                            
+                                if (typeof LivereTower === 'function') { return; }
+                            
+                                j = d.createElement(s);
+                                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                                j.async = true;
+                            
+                                e.parentNode.insertBefore(j, e);
+                            })(document, 'script');
+                            </script>
+                            <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+                        </div> -->
+                        <!-- City版安装代码已完成 -->
+                </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <iframe src="https://www.bilibili.com/read/cv2712690" style="display:none"></iframe>
+        
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-05-19 03:43:04
+-->

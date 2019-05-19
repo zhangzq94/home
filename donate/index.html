@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="referrer" content="never">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ApacheCN 专注于优秀项目维护的开源组织">
+        <meta name="keywords" content="数据科学,数据分析,机器学习,人工智能,深度学习,推荐系统,NLP,CV,回归,分类,聚类,降维,朴素贝叶斯,决策树,SVM,KMeans,PCA,SVD,Logistic,DNN,CNN,LSTM,RNN,GAN,自编码器,sklearn,scikit-learn,TensorFlow,PyTorch,Python,NumPy,Matplotlib,Pandas">
+        <meta name="author" content="ApacheCN Team">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>ApacheCN</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-127082511-1', 'apachecn.org');
+            ga('send', 'pageview');
+        </script> 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- baidu union -->
+      <meta name="baidu_union_verify" content="f57410375adefc6880b9e0972468e329">
+      
+      <!-- baidu webmaster -->
+      <meta name="baidu-site-verification" content="QQxaB1k0Bw" />
+      <!-- baidu webmaster push -->
+      <script src="//push.zhanzhang.baidu.com/push.js"></script>
+      
+      <!-- baidu stats -->
+      <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?84fca651656bc67b4b2d56605b6d0852";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+      
+      <!-- google webmaster -->
+      <meta name="google-site-verification" content="pyo9N70ZWyh8JB43bIu633mhxesJ1IcwWCZlM3jUfFo" />
+      
+      <!-- bing webmaster -->
+      <meta name="msvalidate.01" content="9E9EA92F7E5327E1FE8A5196D5253664" />
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        ApacheCN
+                    </a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://github.com/apachecn/ai-roadmap/tree/master/v1.0">知识树</a>
+                            </li>
+                            <li >
+                                <a href="../translate/">翻译</a>
+                            </li>
+                            <li >
+                                <a href="http://url.cn/5P7UcMt">学习</a>
+                            </li>
+                            <li >
+                                <a href="../game/">比赛</a>
+                            </li>
+                            <li >
+                                <a href="../map/">咨询</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">捐赠</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="https://github.com/apachecn/awesome-indie-zh">远程</a>
+</li>
+                                    
+<li >
+    <a href="https://it-ebooks.flygon.net">电子书</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">组织 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../about/">关于</a>
+</li>
+                                    
+<li >
+    <a href="../member/">成员</a>
+</li>
+                                    
+<li >
+    <a href="../social/">社交</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../map/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../about/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/apachecn/home/"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">捐赠列表</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+                    
+
+<h1 id="_1"><center>捐赠列表<center></h1>
+<blockquote>
+<p><a href="http://www.apachecn.org/donate/1-book/">【公益捐赠】图书捐赠</a></p>
+</blockquote>
+<ul>
+<li>【点击参与】<a href="http://www.apachecn.org/donate/1-book/">图书捐赠 - 捐赠不只是眼前的物质和现金，还有书和智慧</a></li>
+</ul>
+<blockquote>
+<p>捐赠列表（只展示金额在 1 元以上的捐赠）</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>捐赠者</th>
+<th>金额(元)</th>
+<th>时间</th>
+<th>收入类型</th>
+<th>Issue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>例如</td>
+<td><a href="https://github.com/jiangzhonglian">@片刻</a></td>
+<td>666</td>
+<td>2018-07-19</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/1">#1</a></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*大</a></td>
+<td>6.66</td>
+<td>2019-04-30</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@M*r</a></td>
+<td>4.00</td>
+<td>2019-04-23</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*生</a></td>
+<td>5.00</td>
+<td>2019-04-22</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*葳</a></td>
+<td>6.66</td>
+<td>2019-04-18</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@H*i</a></td>
+<td>5.00</td>
+<td>2019-04-14</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*权</a></td>
+<td>5.00</td>
+<td>2019-04-12</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*飞</a></td>
+<td>5.01</td>
+<td>2019-04-08</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*z</a></td>
+<td>3.50</td>
+<td>2019-04-01</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*z</a></td>
+<td>3.50</td>
+<td>2019-04-01</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*一</a></td>
+<td>1.00</td>
+<td>2019-03-31</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*崩</a></td>
+<td>2.00</td>
+<td>2019-03-31</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@w*w</a></td>
+<td>10.00</td>
+<td>2019-03-26</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*~</a></td>
+<td>10.00</td>
+<td>2019-03-24</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@苏墨安Anny</a></td>
+<td>7.77</td>
+<td>2019-03-21</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*聪</a></td>
+<td>10.00</td>
+<td>2019-03-20</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*金</a></td>
+<td>5.00</td>
+<td>2019-03-20</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@G*n</a></td>
+<td>2.00</td>
+<td>2019-03-19</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*宝</a></td>
+<td>6.66</td>
+<td>2019-03-16</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*宇</a></td>
+<td>5.00</td>
+<td>2019-03-14</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*螺</a></td>
+<td>3.00</td>
+<td>2019-03-12</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*健</a></td>
+<td>1.00</td>
+<td>2019-03-09</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*远</a></td>
+<td>5.00</td>
+<td>2019-03-02</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@p*n</a></td>
+<td>2.00</td>
+<td>2019-03-01</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*静波</a></td>
+<td>6.00</td>
+<td>2019-02-25</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/124">#124</a></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*军</a></td>
+<td>10.00</td>
+<td>2019-02-25</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@苏墨安Anny</a></td>
+<td>6.66</td>
+<td>2019-02-22</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>??</td>
+<td><a href="">@*。</a></td>
+<td>50.00</td>
+<td>2019-02-13</td>
+<td>个人赞助</td>
+<td></td>
+</tr>
+<tr>
+<td>56</td>
+<td><a href="">@y*n</a></td>
+<td>10.00</td>
+<td>2019-02-09</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/123">#123</a></td>
+</tr>
+<tr>
+<td>55</td>
+<td><a href="">@j*i</a></td>
+<td>10.00</td>
+<td>2019-02-08</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/122">#122</a></td>
+</tr>
+<tr>
+<td>54</td>
+<td><a href="">@*超</a></td>
+<td>1.00</td>
+<td>2019-01-25</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/118">#118</a></td>
+</tr>
+<tr>
+<td>53</td>
+<td><a href="https://datawhale.club">@Datawhale</a></td>
+<td>66.66</td>
+<td>2019-01-24</td>
+<td>组织赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/119">#119</a></td>
+</tr>
+<tr>
+<td>52</td>
+<td><a href="">@*国华</a></td>
+<td>14.00</td>
+<td>2019-01-22</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/121">#121</a></td>
+</tr>
+<tr>
+<td>51</td>
+<td><a href="">@J*n</a></td>
+<td>1.00</td>
+<td>2019-01-21</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/117">#117</a></td>
+</tr>
+<tr>
+<td>50</td>
+<td><a href="">@M*e</a></td>
+<td>20.00</td>
+<td>2019-01-14</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/116">#116</a></td>
+</tr>
+<tr>
+<td>49</td>
+<td><a href="">@*徐</a></td>
+<td>1.00</td>
+<td>2019-01-08</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/115">#115</a></td>
+</tr>
+<tr>
+<td>48</td>
+<td><a href="">@*P</a></td>
+<td>1.00</td>
+<td>2019-01-04</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/114">#114</a></td>
+</tr>
+<tr>
+<td>47</td>
+<td><a href="">@*晦</a></td>
+<td>5.00</td>
+<td>2019-01-04</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/113">#113</a></td>
+</tr>
+<tr>
+<td>46</td>
+<td><a href="">@P*I</a></td>
+<td>1.00</td>
+<td>2019-01-02</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/112">#112</a></td>
+</tr>
+<tr>
+<td>45</td>
+<td><a href="">@*穆</a></td>
+<td>8.00</td>
+<td>2018-12-29</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/111">#111</a></td>
+</tr>
+<tr>
+<td>44</td>
+<td><a href="">@T*s</a></td>
+<td>6.66</td>
+<td>2018-12-26</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/110">#110</a></td>
+</tr>
+<tr>
+<td>43</td>
+<td><a href="">@*因</a></td>
+<td>20.00</td>
+<td>2018-12-22</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/105">#105</a></td>
+</tr>
+<tr>
+<td>42</td>
+<td><a href="">@N*r</a></td>
+<td>5.00</td>
+<td>2018-12-19</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/70">#70</a></td>
+</tr>
+<tr>
+<td>41</td>
+<td><a href="">@*林</a></td>
+<td>2.00</td>
+<td>2018-12-19</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/13">#13</a></td>
+</tr>
+<tr>
+<td>40</td>
+<td><a href="">@*涛</a></td>
+<td>5.00</td>
+<td>2018-11-07</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/81">#81</a></td>
+</tr>
+<tr>
+<td>39</td>
+<td><a href="">@S*F</a></td>
+<td>1.88</td>
+<td>2018-11-07</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/80">#80</a></td>
+</tr>
+<tr>
+<td>38</td>
+<td><a href="">@*萍</a></td>
+<td>1.00</td>
+<td>2018-11-07</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/79">#79</a></td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="">@*袋</a></td>
+<td>1.79</td>
+<td>2018-11-07</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/78">#78</a></td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="">@*锋</a></td>
+<td>10.00</td>
+<td>2018-11-07</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/77">#77</a></td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="">@*华</a></td>
+<td>0.10</td>
+<td>2018-11-07</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/76">#76</a></td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="">@*信</a></td>
+<td>20.00</td>
+<td>2018-11-07</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/75">#75</a></td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="">@*献伟</a></td>
+<td>10.00</td>
+<td>2018-11-11</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/74">#74</a></td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="">@e*o</a></td>
+<td>2.33</td>
+<td>2018-12-10</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/73">#73</a></td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="">@*龙</a></td>
+<td>10.00</td>
+<td>2018-11-17</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/72">#72</a></td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="">@H*z</a></td>
+<td>66.00</td>
+<td>2018-11-15</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/69">#69</a></td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="">@樵</a></td>
+<td>25.00</td>
+<td>2018-11-14</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/67">#67</a></td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="">@z*f</a></td>
+<td>20.00</td>
+<td>2018-11-07</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/66">#66</a></td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="">@mysteven2017</a></td>
+<td>12.00</td>
+<td>2018-11-05</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/92">#92</a></td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="">@*落</a></td>
+<td>20.00</td>
+<td>2018-11-02</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/52">#52</a></td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="">@X*u</a></td>
+<td>30.00</td>
+<td>2018-10-29</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/51">#51</a></td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="">@*洋</a></td>
+<td>15.00</td>
+<td>2018-10-22</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/50">#50</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="">@S*n</a></td>
+<td>5.00</td>
+<td>2018-10-22</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/49">#49</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="">@O*e</a></td>
+<td>6.66</td>
+<td>2018-10-21</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/47">#47</a></td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="">@时空守望者</a></td>
+<td>1.00</td>
+<td>2018-10-18</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/46">#46</a></td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="">@*丰瑞</a></td>
+<td>1.00</td>
+<td>2018-10-11</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/45">#45</a></td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="">@*宾乐</a></td>
+<td>5.00</td>
+<td>2018-10-07</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/33">#33</a></td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="">@v*g</a></td>
+<td>16.80</td>
+<td>2018-09-04</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/44">#44</a></td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="">@面</a></td>
+<td>2.33</td>
+<td>2018-08-25</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/30">#30</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="">@林*n</a></td>
+<td>10.00</td>
+<td>2018-08-24</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/29">#29</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="">@陈旭</a></td>
+<td>188.00</td>
+<td>2018-08-22</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/28">#28</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="">@幸福秋末凋零</a></td>
+<td>6.60</td>
+<td>2018-08-20</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/25">#25</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="">@袵</a></td>
+<td>6.60</td>
+<td>2018-07-31</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/12">#12</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="">@德兆</a></td>
+<td>50.00</td>
+<td>2018-07-22</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/10">#10</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="">@茂林</a></td>
+<td>10.00</td>
+<td>2018-07-20</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/5">#5</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="">@忠维</a></td>
+<td>10.24</td>
+<td>2018-07-20</td>
+<td>个人赞助</td>
+<td><a href="https://github.com/apachecn/home/issues/4">#4</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>@白鸟无言 398049343</td>
+<td>18.00</td>
+<td>2018-05-20</td>
+<td>个人赞助</td>
+<td><a href="">#0</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>@追随者-足下 1195862494</td>
+<td>100.00</td>
+<td>2018-05-18</td>
+<td>个人赞助</td>
+<td><a href="">#0</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>@自由精灵 315920958</td>
+<td>66.66</td>
+<td>2018-05-17</td>
+<td>个人赞助</td>
+<td><a href="">#0</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>@draw 782478557</td>
+<td>10.00</td>
+<td>2018-05-03</td>
+<td>个人赞助</td>
+<td><a href="">#0</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>@长风 763752138</td>
+<td>3.34</td>
+<td>2018-04-16</td>
+<td>个人赞助</td>
+<td><a href="">#0</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>@凯瑟王·璨星 1076003661</td>
+<td>2.22</td>
+<td>2018-04-16</td>
+<td>个人赞助</td>
+<td><a href="">#0</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>@涅槃之光 447111167</td>
+<td>2.22</td>
+<td>2018-03-25</td>
+<td>个人赞助</td>
+<td><a href="">#0</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>@煜炅 760514101</td>
+<td>3.34</td>
+<td>2018-03-23</td>
+<td>个人赞助</td>
+<td><a href="">#0</a></td>
+</tr>
+<tr>
+<td>1</td>
+<td>@桑 437542541</td>
+<td>8.88</td>
+<td>2017-11-16</td>
+<td>个人赞助</td>
+<td><a href="">#0</a></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="/img/about/donate.jpg" /></p>
+                    
+                    <hr/>
+                    <div align="center">
+                        <p><a href="http://www.apachecn.org" target="_blank"><font face="KaiTi" size="6" color="red">我们一直在努力</font></a></p>
+                        <p><a href="https://github.com/apachecn/home/" target="_blank">apachecn/home</a></p>
+                        <p><iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=home&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+                        <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=home&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+                        <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&repo=home&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+                        <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=bcee938030cc9e1552deb3bd9617bbbf62d3ec1647e4b60d9cd6b6e8f78ddc03"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="ML | ApacheCN" title="ML | ApacheCN"></a></p>
+                        <div style="margin:0 0 10.5px;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1275211409'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1275211409%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></div>
+                        <!-- google ads -->
+                        <div style="text-align:center;margin:0 0 10.5px;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:728px;height:90px"
+                             data-ad-client="ca-pub-3565452474788507"
+                             data-ad-slot="2543897000"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script></div>
+                    </div>
+
+                    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+                    <div id="gitalk-container" class="container-fluid"></div>
+                    <script type="text/javascript">
+                        var gitalk = new Gitalk({
+                        clientID: '8bf005dd930e269fc5bb',
+                        clientSecret: 'a80b7852ffb5a90ca1aca12fb28d7c58bea0c0d3',
+                        repo: 'home',
+                        owner: 'apachecn',
+                        admin: ['jiangzhonglian'],
+                        id: md5(location.pathname),
+                        distractionFreeMode: false
+                        })
+                        gitalk.render('gitalk-container')
+                    </script>
+
+                    <!-- 来必力City版安装代码 -->
+                    <!-- <div id="lv-container" data-id="city" data-uid="MTAyMC8zODYzOC8xNTE2Ng==">
+                            <script type="text/javascript">
+                            (function(d, s) {
+                                var j, e = d.getElementsByTagName(s)[0];
+                            
+                                if (typeof LivereTower === 'function') { return; }
+                            
+                                j = d.createElement(s);
+                                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                                j.async = true;
+                            
+                                e.parentNode.insertBefore(j, e);
+                            })(document, 'script');
+                            </script>
+                            <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+                        </div> -->
+                        <!-- City版安装代码已完成 -->
+                </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <iframe src="https://www.bilibili.com/read/cv2712690" style="display:none"></iframe>
+        
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-05-19 03:43:04
+-->
